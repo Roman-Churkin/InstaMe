@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="403" id="Lil-UJ-3fT" customClass="RCIMPhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="403"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lil-UJ-3fT" id="szl-WW-rsM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="402"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7QE-lr-vIU" userLabel="PhotoImageView">
+                        <rect key="frame" x="21" y="4" width="320" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="320" id="cxp-iM-eVO"/>
+                            <constraint firstAttribute="height" constant="320" id="nBt-44-TCu"/>
+                        </constraints>
+                    </imageView>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwu-kt-2xr" userLabel="LikesCountLabel">
+                        <rect key="frame" x="50" y="329" width="45" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="BIf-1Y-liX"/>
+                            <constraint firstAttribute="width" constant="45" id="X4g-pq-9oW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="q1T-Nz-Vrg" userLabel="LikesImageView">
+                        <rect key="frame" x="31" y="330" width="14" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Cna-ql-83A"/>
+                            <constraint firstAttribute="width" constant="14" id="llu-Yd-gSU"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment" translatesAutoresizingMaskIntoConstraints="NO" id="qiz-0q-ftz" userLabel="CommentsImageView">
+                        <rect key="frame" x="110" y="330" width="14" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="j0a-mL-F5Q"/>
+                            <constraint firstAttribute="height" constant="14" id="zPb-9e-q6d"/>
+                        </constraints>
+                    </imageView>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awf-8L-nvN" userLabel="CommentsCountLabel">
+                        <rect key="frame" x="129" y="329" width="202" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xwu-kt-2xr" firstAttribute="leading" secondItem="q1T-Nz-Vrg" secondAttribute="trailing" constant="5" id="1tO-z7-D9x"/>
+                    <constraint firstAttribute="centerX" secondItem="7QE-lr-vIU" secondAttribute="centerX" id="2iL-5T-0Dc"/>
+                    <constraint firstItem="Awf-8L-nvN" firstAttribute="top" secondItem="Xwu-kt-2xr" secondAttribute="top" id="89c-iI-iY2"/>
+                    <constraint firstItem="Xwu-kt-2xr" firstAttribute="top" secondItem="7QE-lr-vIU" secondAttribute="bottom" constant="5" id="GiI-Ei-rgz"/>
+                    <constraint firstItem="Xwu-kt-2xr" firstAttribute="centerY" secondItem="q1T-Nz-Vrg" secondAttribute="centerY" constant="-1" id="Kv2-Ws-gbZ"/>
+                    <constraint firstItem="Awf-8L-nvN" firstAttribute="height" secondItem="Xwu-kt-2xr" secondAttribute="height" id="N96-Y9-7nY"/>
+                    <constraint firstItem="Awf-8L-nvN" firstAttribute="centerY" secondItem="qiz-0q-ftz" secondAttribute="centerY" constant="-1" id="Qk5-Mq-waG"/>
+                    <constraint firstItem="7QE-lr-vIU" firstAttribute="leading" secondItem="q1T-Nz-Vrg" secondAttribute="leading" constant="-10" id="YIT-PU-CBY"/>
+                    <constraint firstItem="Awf-8L-nvN" firstAttribute="trailing" secondItem="7QE-lr-vIU" secondAttribute="trailing" constant="-10" id="bz4-L0-5a3"/>
+                    <constraint firstItem="qiz-0q-ftz" firstAttribute="leading" secondItem="Xwu-kt-2xr" secondAttribute="trailing" constant="15" id="vNF-qn-H25"/>
+                    <constraint firstItem="Awf-8L-nvN" firstAttribute="leading" secondItem="qiz-0q-ftz" secondAttribute="trailing" constant="5" id="wr0-fx-r2d"/>
+                    <constraint firstItem="7QE-lr-vIU" firstAttribute="top" secondItem="szl-WW-rsM" secondAttribute="top" constant="4" id="yrd-4m-Jw4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="commentsCountLabel" destination="Awf-8L-nvN" id="FcZ-ML-A4S"/>
+                <outlet property="heartImageView" destination="q1T-Nz-Vrg" id="ZsO-fW-wlt"/>
+                <outlet property="likesCountLabel" destination="Xwu-kt-2xr" id="3vq-we-XUM"/>
+                <outlet property="photoImageView" destination="7QE-lr-vIU" id="led-VZ-cYb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comment" width="14" height="14"/>
+        <image name="like" width="14" height="13"/>
+    </resources>
+</document>

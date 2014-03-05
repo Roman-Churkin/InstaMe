@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RCIMInstaPhotoInfo" representedClassName="RCIMInstaPhotoInfo" syncable="YES">
+        <attribute name="commentsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="comments.count"/>
+            </userInfo>
+        </attribute>
+        <attribute name="createDate" attributeType="Date" syncable="YES">
+            <userInfo>
+                <entry key="attributeValueClassName" value="NSUInteger"/>
+                <entry key="mappedKeyName" value="created_time"/>
+            </userInfo>
+        </attribute>
+        <attribute name="likesCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="likes.count"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lowResPhotoURLString" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="images.thumbnail.url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="maxResPhotoURLString" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="images.standard_resolution.url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="midResPhotoURLString" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="images.low_resolution.url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="photoID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="caption.text"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userHasLiked" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="user_has_liked"/>
+            </userInfo>
+        </attribute>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RCIMPhotoComment" inverseName="photo" inverseEntity="RCIMPhotoComment" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="comments.data"/>
+                <entry key="relatedByAttribute" value="commentID"/>
+            </userInfo>
+        </relationship>
+        <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="RCIMInstaUser" inverseName="userPhotos" inverseEntity="RCIMInstaUser" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName1" value="caption.from"/>
+                <entry key="mappedKeyName2" value="user"/>
+                <entry key="relatedByAttribute" value="userID"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="relatedByAttribute" value="photoID"/>
+        </userInfo>
+    </entity>
+    <entity name="RCIMInstaUser" representedClassName="RCIMInstaUser" syncable="YES">
+        <attribute name="profilePictureURLString" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="profile_picture"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userExtraInfo" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="bio"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userFullName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="full_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userID" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userName" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="username"/>
+            </userInfo>
+        </attribute>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RCIMPhotoComment" inverseName="user" inverseEntity="RCIMPhotoComment" syncable="YES"/>
+        <relationship name="userPhotos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RCIMInstaPhotoInfo" inverseName="user" inverseEntity="RCIMInstaPhotoInfo" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="userID"/>
+        </userInfo>
+    </entity>
+    <entity name="RCIMPhotoComment" representedClassName="RCIMPhotoComment" syncable="YES">
+        <attribute name="commentID" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="commentText" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="text"/>
+            </userInfo>
+        </attribute>
+        <attribute name="createDate" attributeType="Date" syncable="YES">
+            <userInfo>
+                <entry key="attributeValueClassName" value="NSUInteger"/>
+                <entry key="mappedKeyName" value="created_time"/>
+            </userInfo>
+        </attribute>
+        <relationship name="photo" maxCount="1" deletionRule="Nullify" destinationEntity="RCIMInstaPhotoInfo" inverseName="comments" inverseEntity="RCIMInstaPhotoInfo" syncable="YES"/>
+        <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="RCIMInstaUser" inverseName="comments" inverseEntity="RCIMInstaUser" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="from"/>
+                <entry key="relatedByAttribute" value="userID"/>
+            </userInfo>
+        </relationship>
+        <userInfo>
+            <entry key="relatedByAttribute" value="commentID"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="RCIMInstaPhotoInfo" positionX="144" positionY="-144" width="144" height="208"/>
+        <element name="RCIMInstaUser" positionX="-288" positionY="-144" width="144" height="148"/>
+        <element name="RCIMPhotoComment" positionX="-72" positionY="-144" width="144" height="118"/>
+    </elements>
+</model>

@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8329FE9818C631CC004548B3 /* RCIMPhotoDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8329FE9718C631CC004548B3 /* RCIMPhotoDetailsTableViewController.m */; };
+		8329FEAD18C635E1004548B3 /* RCIMPhotoCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8329FEAB18C635E1004548B3 /* RCIMPhotoCommentCell.m */; };
+		8329FEAE18C635E1004548B3 /* RCIMPhotoCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8329FEAC18C635E1004548B3 /* RCIMPhotoCommentCell.xib */; };
+		8329FEB118C63BD5004548B3 /* RCIMPhotoComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8329FEB018C63BD5004548B3 /* RCIMPhotoComment.m */; };
+		8329FEB418C63BE0004548B3 /* _RCIMPhotoComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8329FEB318C63BE0004548B3 /* _RCIMPhotoComment.m */; };
+		8329FEB718C6469D004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8329FEB618C6469D004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoInfo.m */; };
+		8329FEBA18C646A9004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8329FEB918C646A9004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoComment.m */; };
+		8329FEBD18C64831004548B3 /* NSString+InstaUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8329FEBC18C64831004548B3 /* NSString+InstaUser.m */; };
+		834F034718C50CB800CD873F /* RCIMUserInfoView+ConfigureForUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 834F033D18C50CB800CD873F /* RCIMUserInfoView+ConfigureForUser.m */; };
+		834F034818C50CB800CD873F /* RCIMUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 834F033F18C50CB800CD873F /* RCIMUserInfoView.m */; };
+		834F034918C50CB800CD873F /* RCIMUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834F034018C50CB800CD873F /* RCIMUserInfoView.xib */; };
+		834F034A18C50CB800CD873F /* RCIMPhotoCell+ConfigureForPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 834F034318C50CB800CD873F /* RCIMPhotoCell+ConfigureForPhoto.m */; };
+		834F034B18C50CB800CD873F /* RCIMPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 834F034518C50CB800CD873F /* RCIMPhotoCell.m */; };
+		834F034C18C50CB800CD873F /* RCIMPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834F034618C50CB800CD873F /* RCIMPhotoCell.xib */; };
+		834F034F18C5197000CD873F /* RCIMFeedPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 834F034E18C5197000CD873F /* RCIMFeedPhotoManager.m */; };
+		834F035218C51B8800CD873F /* RCIMInstaPhotoInfo+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 834F035118C51B8800CD873F /* RCIMInstaPhotoInfo+Network.m */; };
+		836703AE18C776B90084948A /* instameicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 836703AD18C776B90084948A /* instameicon.png */; };
+		839FA80818C4DF00006B96D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839FA80718C4DF00006B96D7 /* Foundation.framework */; };
+		839FA80A18C4DF00006B96D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839FA80918C4DF00006B96D7 /* CoreGraphics.framework */; };
+		839FA80C18C4DF00006B96D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839FA80B18C4DF00006B96D7 /* UIKit.framework */; };
+		839FA80E18C4DF00006B96D7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839FA80D18C4DF00006B96D7 /* CoreData.framework */; };
+		839FA81418C4DF00006B96D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 839FA81218C4DF00006B96D7 /* InfoPlist.strings */; };
+		839FA81618C4DF00006B96D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 839FA81518C4DF00006B96D7 /* main.m */; };
+		839FA81A18C4DF00006B96D7 /* RCIMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 839FA81918C4DF00006B96D7 /* RCIMAppDelegate.m */; };
+		839FA81F18C4DF00006B96D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839FA81E18C4DF00006B96D7 /* Images.xcassets */; };
+		83EA857518C4E03F00849239 /* InstaMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83EA857318C4E03F00849239 /* InstaMe.xcdatamodeld */; };
+		83EA858118C4E0EA00849239 /* RCIMInstaPhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA857918C4E0EA00849239 /* RCIMInstaPhotoInfo.m */; };
+		83EA858218C4E0EA00849239 /* RCIMInstaUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA857B18C4E0EA00849239 /* RCIMInstaUser.m */; };
+		83EA858318C4E0EA00849239 /* _RCIMInstaPhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA857E18C4E0EA00849239 /* _RCIMInstaPhotoInfo.m */; };
+		83EA858418C4E0EA00849239 /* _RCIMInstaUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA858018C4E0EA00849239 /* _RCIMInstaUser.m */; };
+		83EA858B18C4E22700849239 /* RCIMInstagramClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA858A18C4E22700849239 /* RCIMInstagramClient.m */; };
+		83EA858E18C4EB0400849239 /* RCIMUserFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA858D18C4EB0400849239 /* RCIMUserFeedViewController.m */; };
+		83EA859B18C4EC0E00849239 /* RCIMLoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA859918C4EC0E00849239 /* RCIMLoginScreenViewController.m */; };
+		83EA859C18C4EC0E00849239 /* RCIMLoginScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83EA859A18C4EC0E00849239 /* RCIMLoginScreenViewController.xib */; };
+		83EA859F18C4EC2000849239 /* RCIMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA859E18C4EC2000849239 /* RCIMLoginViewController.m */; };
+		83EA85A218C4EC4500849239 /* RFConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA85A118C4EC4500849239 /* RFConstraints.m */; };
+		83EA85A518C4EC4C00849239 /* UIView+RCNibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA85A418C4EC4C00849239 /* UIView+RCNibLoading.m */; };
+		83EA85A818C4ECC900849239 /* RCIMInstaUser+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA85A718C4ECC900849239 /* RCIMInstaUser+Network.m */; };
+		E3A0478612794E3CA2373F26 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B1B0C98C394EFB9F5664A8 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8329FE9618C631CC004548B3 /* RCIMPhotoDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMPhotoDetailsTableViewController.h; sourceTree = "<group>"; };
+		8329FE9718C631CC004548B3 /* RCIMPhotoDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMPhotoDetailsTableViewController.m; sourceTree = "<group>"; };
+		8329FEAA18C635E1004548B3 /* RCIMPhotoCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMPhotoCommentCell.h; sourceTree = "<group>"; };
+		8329FEAB18C635E1004548B3 /* RCIMPhotoCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMPhotoCommentCell.m; sourceTree = "<group>"; };
+		8329FEAC18C635E1004548B3 /* RCIMPhotoCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCIMPhotoCommentCell.xib; sourceTree = "<group>"; };
+		8329FEAF18C63BD5004548B3 /* RCIMPhotoComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMPhotoComment.h; sourceTree = "<group>"; };
+		8329FEB018C63BD5004548B3 /* RCIMPhotoComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMPhotoComment.m; sourceTree = "<group>"; };
+		8329FEB218C63BE0004548B3 /* _RCIMPhotoComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RCIMPhotoComment.h; sourceTree = "<group>"; };
+		8329FEB318C63BE0004548B3 /* _RCIMPhotoComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RCIMPhotoComment.m; sourceTree = "<group>"; };
+		8329FEB518C6469D004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCIMPhotoCommentCell+ConfigureForPhotoInfo.h"; sourceTree = "<group>"; };
+		8329FEB618C6469D004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCIMPhotoCommentCell+ConfigureForPhotoInfo.m"; sourceTree = "<group>"; };
+		8329FEB818C646A9004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCIMPhotoCommentCell+ConfigureForPhotoComment.h"; sourceTree = "<group>"; };
+		8329FEB918C646A9004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCIMPhotoCommentCell+ConfigureForPhotoComment.m"; sourceTree = "<group>"; };
+		8329FEBB18C64831004548B3 /* NSString+InstaUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InstaUser.h"; sourceTree = "<group>"; };
+		8329FEBC18C64831004548B3 /* NSString+InstaUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InstaUser.m"; sourceTree = "<group>"; };
+		834F033C18C50CB800CD873F /* RCIMUserInfoView+ConfigureForUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCIMUserInfoView+ConfigureForUser.h"; sourceTree = "<group>"; };
+		834F033D18C50CB800CD873F /* RCIMUserInfoView+ConfigureForUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCIMUserInfoView+ConfigureForUser.m"; sourceTree = "<group>"; };
+		834F033E18C50CB800CD873F /* RCIMUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMUserInfoView.h; sourceTree = "<group>"; };
+		834F033F18C50CB800CD873F /* RCIMUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMUserInfoView.m; sourceTree = "<group>"; };
+		834F034018C50CB800CD873F /* RCIMUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCIMUserInfoView.xib; sourceTree = "<group>"; };
+		834F034218C50CB800CD873F /* RCIMPhotoCell+ConfigureForPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCIMPhotoCell+ConfigureForPhoto.h"; sourceTree = "<group>"; };
+		834F034318C50CB800CD873F /* RCIMPhotoCell+ConfigureForPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCIMPhotoCell+ConfigureForPhoto.m"; sourceTree = "<group>"; };
+		834F034418C50CB800CD873F /* RCIMPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMPhotoCell.h; sourceTree = "<group>"; };
+		834F034518C50CB800CD873F /* RCIMPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMPhotoCell.m; sourceTree = "<group>"; };
+		834F034618C50CB800CD873F /* RCIMPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCIMPhotoCell.xib; sourceTree = "<group>"; };
+		834F034D18C5197000CD873F /* RCIMFeedPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMFeedPhotoManager.h; sourceTree = "<group>"; };
+		834F034E18C5197000CD873F /* RCIMFeedPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMFeedPhotoManager.m; sourceTree = "<group>"; };
+		834F035018C51B8800CD873F /* RCIMInstaPhotoInfo+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCIMInstaPhotoInfo+Network.h"; sourceTree = "<group>"; };
+		834F035118C51B8800CD873F /* RCIMInstaPhotoInfo+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCIMInstaPhotoInfo+Network.m"; sourceTree = "<group>"; };
+		836703AD18C776B90084948A /* instameicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instameicon.png; sourceTree = "<group>"; };
+		839FA80418C4DF00006B96D7 /* InstaMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		839FA80718C4DF00006B96D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		839FA80918C4DF00006B96D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		839FA80B18C4DF00006B96D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		839FA80D18C4DF00006B96D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		839FA81118C4DF00006B96D7 /* InstaMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaMe-Info.plist"; sourceTree = "<group>"; };
+		839FA81318C4DF00006B96D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		839FA81518C4DF00006B96D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		839FA81718C4DF00006B96D7 /* InstaMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaMe-Prefix.pch"; sourceTree = "<group>"; };
+		839FA81818C4DF00006B96D7 /* RCIMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCIMAppDelegate.h; sourceTree = "<group>"; };
+		839FA81918C4DF00006B96D7 /* RCIMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCIMAppDelegate.m; sourceTree = "<group>"; };
+		839FA81E18C4DF00006B96D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		839FA82518C4DF00006B96D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		83EA857418C4E03F00849239 /* InstaMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstaMe.xcdatamodel; sourceTree = "<group>"; };
+		83EA857818C4E0EA00849239 /* RCIMInstaPhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMInstaPhotoInfo.h; sourceTree = "<group>"; };
+		83EA857918C4E0EA00849239 /* RCIMInstaPhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMInstaPhotoInfo.m; sourceTree = "<group>"; };
+		83EA857A18C4E0EA00849239 /* RCIMInstaUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMInstaUser.h; sourceTree = "<group>"; };
+		83EA857B18C4E0EA00849239 /* RCIMInstaUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMInstaUser.m; sourceTree = "<group>"; };
+		83EA857D18C4E0EA00849239 /* _RCIMInstaPhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RCIMInstaPhotoInfo.h; sourceTree = "<group>"; };
+		83EA857E18C4E0EA00849239 /* _RCIMInstaPhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RCIMInstaPhotoInfo.m; sourceTree = "<group>"; };
+		83EA857F18C4E0EA00849239 /* _RCIMInstaUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RCIMInstaUser.h; sourceTree = "<group>"; };
+		83EA858018C4E0EA00849239 /* _RCIMInstaUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RCIMInstaUser.m; sourceTree = "<group>"; };
+		83EA858918C4E22700849239 /* RCIMInstagramClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMInstagramClient.h; sourceTree = "<group>"; };
+		83EA858A18C4E22700849239 /* RCIMInstagramClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMInstagramClient.m; sourceTree = "<group>"; };
+		83EA858C18C4EB0400849239 /* RCIMUserFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMUserFeedViewController.h; sourceTree = "<group>"; };
+		83EA858D18C4EB0400849239 /* RCIMUserFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMUserFeedViewController.m; sourceTree = "<group>"; };
+		83EA859818C4EC0E00849239 /* RCIMLoginScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMLoginScreenViewController.h; sourceTree = "<group>"; };
+		83EA859918C4EC0E00849239 /* RCIMLoginScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMLoginScreenViewController.m; sourceTree = "<group>"; };
+		83EA859A18C4EC0E00849239 /* RCIMLoginScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCIMLoginScreenViewController.xib; sourceTree = "<group>"; };
+		83EA859D18C4EC2000849239 /* RCIMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIMLoginViewController.h; sourceTree = "<group>"; };
+		83EA859E18C4EC2000849239 /* RCIMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIMLoginViewController.m; sourceTree = "<group>"; };
+		83EA85A018C4EC4500849239 /* RFConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFConstraints.h; sourceTree = "<group>"; };
+		83EA85A118C4EC4500849239 /* RFConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFConstraints.m; sourceTree = "<group>"; };
+		83EA85A318C4EC4C00849239 /* UIView+RCNibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RCNibLoading.h"; sourceTree = "<group>"; };
+		83EA85A418C4EC4C00849239 /* UIView+RCNibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RCNibLoading.m"; sourceTree = "<group>"; };
+		83EA85A618C4ECC900849239 /* RCIMInstaUser+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCIMInstaUser+Network.h"; sourceTree = "<group>"; };
+		83EA85A718C4ECC900849239 /* RCIMInstaUser+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCIMInstaUser+Network.m"; sourceTree = "<group>"; };
+		A8B1B0C98C394EFB9F5664A8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E751B47928A441ABA5C5EF45 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		839FA80118C4DF00006B96D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839FA80A18C4DF00006B96D7 /* CoreGraphics.framework in Frameworks */,
+				839FA80E18C4DF00006B96D7 /* CoreData.framework in Frameworks */,
+				839FA80C18C4DF00006B96D7 /* UIKit.framework in Frameworks */,
+				839FA80818C4DF00006B96D7 /* Foundation.framework in Frameworks */,
+				E3A0478612794E3CA2373F26 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8329FEA918C635C3004548B3 /* PhotoCommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				8329FEAC18C635E1004548B3 /* RCIMPhotoCommentCell.xib */,
+				8329FEAA18C635E1004548B3 /* RCIMPhotoCommentCell.h */,
+				8329FEAB18C635E1004548B3 /* RCIMPhotoCommentCell.m */,
+				8329FEB518C6469D004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoInfo.h */,
+				8329FEB618C6469D004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoInfo.m */,
+				8329FEB818C646A9004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoComment.h */,
+				8329FEB918C646A9004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoComment.m */,
+			);
+			path = PhotoCommentCell;
+			sourceTree = "<group>";
+		};
+		834F033B18C50CB800CD873F /* UserInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				834F034018C50CB800CD873F /* RCIMUserInfoView.xib */,
+				834F033E18C50CB800CD873F /* RCIMUserInfoView.h */,
+				834F033F18C50CB800CD873F /* RCIMUserInfoView.m */,
+				834F033C18C50CB800CD873F /* RCIMUserInfoView+ConfigureForUser.h */,
+				834F033D18C50CB800CD873F /* RCIMUserInfoView+ConfigureForUser.m */,
+			);
+			path = UserInfoView;
+			sourceTree = "<group>";
+		};
+		834F034118C50CB800CD873F /* PhotoCell */ = {
+			isa = PBXGroup;
+			children = (
+				834F034618C50CB800CD873F /* RCIMPhotoCell.xib */,
+				834F034418C50CB800CD873F /* RCIMPhotoCell.h */,
+				834F034518C50CB800CD873F /* RCIMPhotoCell.m */,
+				834F034218C50CB800CD873F /* RCIMPhotoCell+ConfigureForPhoto.h */,
+				834F034318C50CB800CD873F /* RCIMPhotoCell+ConfigureForPhoto.m */,
+			);
+			path = PhotoCell;
+			sourceTree = "<group>";
+		};
+		835FF5AD18C4DF7E00322156 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83EA857718C4E0EA00849239 /* Human */,
+				83EA857C18C4E0EA00849239 /* Machine */,
+				83EA857318C4E03F00849239 /* InstaMe.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		835FF5B118C4DFF300322156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				834F033B18C50CB800CD873F /* UserInfoView */,
+				834F034118C50CB800CD873F /* PhotoCell */,
+				8329FEA918C635C3004548B3 /* PhotoCommentCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		835FF5B218C4DFFB00322156 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83EA859D18C4EC2000849239 /* RCIMLoginViewController.h */,
+				83EA859E18C4EC2000849239 /* RCIMLoginViewController.m */,
+				83EA859718C4EB9600849239 /* LoginScreen */,
+				83EA858C18C4EB0400849239 /* RCIMUserFeedViewController.h */,
+				83EA858D18C4EB0400849239 /* RCIMUserFeedViewController.m */,
+				8329FE9618C631CC004548B3 /* RCIMPhotoDetailsTableViewController.h */,
+				8329FE9718C631CC004548B3 /* RCIMPhotoDetailsTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		839FA7FB18C4DF00006B96D7 = {
+			isa = PBXGroup;
+			children = (
+				836703AD18C776B90084948A /* instameicon.png */,
+				839FA80F18C4DF00006B96D7 /* InstaMe */,
+				839FA80618C4DF00006B96D7 /* Frameworks */,
+				839FA80518C4DF00006B96D7 /* Products */,
+				E751B47928A441ABA5C5EF45 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		839FA80518C4DF00006B96D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				839FA80418C4DF00006B96D7 /* InstaMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		839FA80618C4DF00006B96D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				839FA80718C4DF00006B96D7 /* Foundation.framework */,
+				839FA80918C4DF00006B96D7 /* CoreGraphics.framework */,
+				839FA80B18C4DF00006B96D7 /* UIKit.framework */,
+				839FA80D18C4DF00006B96D7 /* CoreData.framework */,
+				839FA82518C4DF00006B96D7 /* XCTest.framework */,
+				A8B1B0C98C394EFB9F5664A8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		839FA80F18C4DF00006B96D7 /* InstaMe */ = {
+			isa = PBXGroup;
+			children = (
+				839FA81E18C4DF00006B96D7 /* Images.xcassets */,
+				839FA81818C4DF00006B96D7 /* RCIMAppDelegate.h */,
+				839FA81918C4DF00006B96D7 /* RCIMAppDelegate.m */,
+				83EA85A018C4EC4500849239 /* RFConstraints.h */,
+				83EA85A118C4EC4500849239 /* RFConstraints.m */,
+				83EA85A318C4EC4C00849239 /* UIView+RCNibLoading.h */,
+				83EA85A418C4EC4C00849239 /* UIView+RCNibLoading.m */,
+				835FF5B218C4DFFB00322156 /* Controller */,
+				835FF5B118C4DFF300322156 /* View */,
+				835FF5AD18C4DF7E00322156 /* Model */,
+				83EA858818C4E1E500849239 /* Network */,
+				839FA81018C4DF00006B96D7 /* Supporting Files */,
+			);
+			path = InstaMe;
+			sourceTree = "<group>";
+		};
+		839FA81018C4DF00006B96D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				839FA81118C4DF00006B96D7 /* InstaMe-Info.plist */,
+				839FA81218C4DF00006B96D7 /* InfoPlist.strings */,
+				839FA81518C4DF00006B96D7 /* main.m */,
+				839FA81718C4DF00006B96D7 /* InstaMe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83EA857718C4E0EA00849239 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				83EA857A18C4E0EA00849239 /* RCIMInstaUser.h */,
+				83EA857B18C4E0EA00849239 /* RCIMInstaUser.m */,
+				83EA857818C4E0EA00849239 /* RCIMInstaPhotoInfo.h */,
+				83EA857918C4E0EA00849239 /* RCIMInstaPhotoInfo.m */,
+				8329FEAF18C63BD5004548B3 /* RCIMPhotoComment.h */,
+				8329FEB018C63BD5004548B3 /* RCIMPhotoComment.m */,
+				8329FEBB18C64831004548B3 /* NSString+InstaUser.h */,
+				8329FEBC18C64831004548B3 /* NSString+InstaUser.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		83EA857C18C4E0EA00849239 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				83EA857F18C4E0EA00849239 /* _RCIMInstaUser.h */,
+				83EA858018C4E0EA00849239 /* _RCIMInstaUser.m */,
+				83EA857D18C4E0EA00849239 /* _RCIMInstaPhotoInfo.h */,
+				83EA857E18C4E0EA00849239 /* _RCIMInstaPhotoInfo.m */,
+				8329FEB218C63BE0004548B3 /* _RCIMPhotoComment.h */,
+				8329FEB318C63BE0004548B3 /* _RCIMPhotoComment.m */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
+		83EA858818C4E1E500849239 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				83EA858918C4E22700849239 /* RCIMInstagramClient.h */,
+				83EA858A18C4E22700849239 /* RCIMInstagramClient.m */,
+				83EA85A618C4ECC900849239 /* RCIMInstaUser+Network.h */,
+				83EA85A718C4ECC900849239 /* RCIMInstaUser+Network.m */,
+				834F035018C51B8800CD873F /* RCIMInstaPhotoInfo+Network.h */,
+				834F035118C51B8800CD873F /* RCIMInstaPhotoInfo+Network.m */,
+				834F034D18C5197000CD873F /* RCIMFeedPhotoManager.h */,
+				834F034E18C5197000CD873F /* RCIMFeedPhotoManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		83EA859718C4EB9600849239 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				83EA859818C4EC0E00849239 /* RCIMLoginScreenViewController.h */,
+				83EA859918C4EC0E00849239 /* RCIMLoginScreenViewController.m */,
+				83EA859A18C4EC0E00849239 /* RCIMLoginScreenViewController.xib */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		839FA80318C4DF00006B96D7 /* InstaMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839FA83618C4DF00006B96D7 /* Build configuration list for PBXNativeTarget "InstaMe" */;
+			buildPhases = (
+				A2B7D2DB1EC145F6B9003EDA /* Check Pods Manifest.lock */,
+				839FA80018C4DF00006B96D7 /* Sources */,
+				839FA80118C4DF00006B96D7 /* Frameworks */,
+				839FA80218C4DF00006B96D7 /* Resources */,
+				47FE5982B4FF4ECD91BB547D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaMe;
+			productName = InstaMe;
+			productReference = 839FA80418C4DF00006B96D7 /* InstaMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		839FA7FC18C4DF00006B96D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RCIM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Roman Churkin";
+			};
+			buildConfigurationList = 839FA7FF18C4DF00006B96D7 /* Build configuration list for PBXProject "InstaMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 839FA7FB18C4DF00006B96D7;
+			productRefGroup = 839FA80518C4DF00006B96D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				839FA80318C4DF00006B96D7 /* InstaMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		839FA80218C4DF00006B96D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836703AE18C776B90084948A /* instameicon.png in Resources */,
+				839FA81418C4DF00006B96D7 /* InfoPlist.strings in Resources */,
+				8329FEAE18C635E1004548B3 /* RCIMPhotoCommentCell.xib in Resources */,
+				839FA81F18C4DF00006B96D7 /* Images.xcassets in Resources */,
+				834F034918C50CB800CD873F /* RCIMUserInfoView.xib in Resources */,
+				834F034C18C50CB800CD873F /* RCIMPhotoCell.xib in Resources */,
+				83EA859C18C4EC0E00849239 /* RCIMLoginScreenViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47FE5982B4FF4ECD91BB547D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2B7D2DB1EC145F6B9003EDA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		839FA80018C4DF00006B96D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834F034F18C5197000CD873F /* RCIMFeedPhotoManager.m in Sources */,
+				83EA858418C4E0EA00849239 /* _RCIMInstaUser.m in Sources */,
+				839FA81618C4DF00006B96D7 /* main.m in Sources */,
+				83EA85A818C4ECC900849239 /* RCIMInstaUser+Network.m in Sources */,
+				83EA858318C4E0EA00849239 /* _RCIMInstaPhotoInfo.m in Sources */,
+				8329FEB418C63BE0004548B3 /* _RCIMPhotoComment.m in Sources */,
+				83EA858218C4E0EA00849239 /* RCIMInstaUser.m in Sources */,
+				839FA81A18C4DF00006B96D7 /* RCIMAppDelegate.m in Sources */,
+				83EA85A518C4EC4C00849239 /* UIView+RCNibLoading.m in Sources */,
+				834F034B18C50CB800CD873F /* RCIMPhotoCell.m in Sources */,
+				8329FEB718C6469D004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoInfo.m in Sources */,
+				83EA858E18C4EB0400849239 /* RCIMUserFeedViewController.m in Sources */,
+				834F034718C50CB800CD873F /* RCIMUserInfoView+ConfigureForUser.m in Sources */,
+				83EA85A218C4EC4500849239 /* RFConstraints.m in Sources */,
+				834F035218C51B8800CD873F /* RCIMInstaPhotoInfo+Network.m in Sources */,
+				83EA857518C4E03F00849239 /* InstaMe.xcdatamodeld in Sources */,
+				83EA858B18C4E22700849239 /* RCIMInstagramClient.m in Sources */,
+				83EA858118C4E0EA00849239 /* RCIMInstaPhotoInfo.m in Sources */,
+				8329FEBD18C64831004548B3 /* NSString+InstaUser.m in Sources */,
+				83EA859B18C4EC0E00849239 /* RCIMLoginScreenViewController.m in Sources */,
+				8329FEB118C63BD5004548B3 /* RCIMPhotoComment.m in Sources */,
+				834F034818C50CB800CD873F /* RCIMUserInfoView.m in Sources */,
+				8329FEBA18C646A9004548B3 /* RCIMPhotoCommentCell+ConfigureForPhotoComment.m in Sources */,
+				8329FE9818C631CC004548B3 /* RCIMPhotoDetailsTableViewController.m in Sources */,
+				8329FEAD18C635E1004548B3 /* RCIMPhotoCommentCell.m in Sources */,
+				834F034A18C50CB800CD873F /* RCIMPhotoCell+ConfigureForPhoto.m in Sources */,
+				83EA859F18C4EC2000849239 /* RCIMLoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		839FA81218C4DF00006B96D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				839FA81318C4DF00006B96D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		839FA83418C4DF00006B96D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		839FA83518C4DF00006B96D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		839FA83718C4DF00006B96D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E751B47928A441ABA5C5EF45 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaMe/InstaMe-Prefix.pch";
+				INFOPLIST_FILE = "InstaMe/InstaMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		839FA83818C4DF00006B96D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E751B47928A441ABA5C5EF45 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaMe/InstaMe-Prefix.pch";
+				INFOPLIST_FILE = "InstaMe/InstaMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		839FA7FF18C4DF00006B96D7 /* Build configuration list for PBXProject "InstaMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839FA83418C4DF00006B96D7 /* Debug */,
+				839FA83518C4DF00006B96D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839FA83618C4DF00006B96D7 /* Build configuration list for PBXNativeTarget "InstaMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839FA83718C4DF00006B96D7 /* Debug */,
+				839FA83818C4DF00006B96D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		83EA857318C4E03F00849239 /* InstaMe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				83EA857418C4E03F00849239 /* InstaMe.xcdatamodel */,
+			);
+			currentVersion = 83EA857418C4E03F00849239 /* InstaMe.xcdatamodel */;
+			path = InstaMe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 839FA7FC18C4DF00006B96D7 /* Project object */;
+}
